@@ -1,9 +1,9 @@
 {
   "consumer": {
-    "name": "Pact Test Consumer"
+    "name": "Pact Publisher Sample Test Consumer 1"
   },
   "provider": {
-    "name": "Pact Test Provider"
+    "name": "Pact Publisher Sample Test Provider 1"
   },
   "interactions": [
     {

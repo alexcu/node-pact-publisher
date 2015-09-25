@@ -1,0 +1,28 @@
+{
+  "consumer": {
+    "name": "Pact Publisher Sample Test Consumer 2"
+  },
+  "provider": {
+    "name": "Pact Publisher Sample Test Provider 2"
+  },
+  "interactions": [
+    {
+      "description": "A pact test description again",
+      "provider_state": "A pact test provider state again",
+      "request": {
+        "method": "get",
+        "path": "/my/path"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": ["I'm an array", "of really", "pretty things"]
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecificationVersion": "1.0.0"
+  }
+}
