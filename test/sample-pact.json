@@ -1,0 +1,37 @@
+{
+  "consumer": {
+    "name": "Pact Test Consumer"
+  },
+  "provider": {
+    "name": "Pact Test Provider"
+  },
+  "interactions": [
+    {
+      "description": "A pact test description",
+      "provider_state": "A pact test provider state",
+      "request": {
+        "method": "post",
+        "path": "/my/path",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "yep": "this is a body",
+          "made": "of json stuff"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "look": "at all the stuff I receive"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecificationVersion": "1.0.0"
+  }
+}
