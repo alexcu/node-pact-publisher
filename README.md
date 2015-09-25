@@ -1,17 +1,32 @@
 # Node Pact Publisher
 Publishes [pact](https://github.com/bethesque/pact-specification) contracts to a remote pact [broker](https://github.com/bethesque/pact_broker) using Node.
 
-<!-- MarkdownTOC -->
+[![NPM version](https://badge.fury.io/js/node-pact-publisher.svg)](http://badge.fury.io/js/node-pact-publisher)
 
-- Using Pact Publisher
-  - Constructing a new publisher
-  - Publishing pacts to the broker
-  - Registering new pacticipants on the broker
-  - Checking for pacticipants on the broker
-- Contributing
-- Licence
+- [Installing](#installing)
+- [Using Pact Publisher](#using-pact-publisher)
+  - [Constructing a new publisher](#constructing-a-new-publisher)
+  - [Publishing pacts to the broker](#publishing-pacts-to-the-broker)
+  - [Registering new pacticipants on the broker](#registering-new-pacticipants-on-the-broker)
+  - [Checking for pacticipants on the broker](#checking-for-pacticipants-on-the-broker)
+- [Contributing](#contributing)
+  - [Testing](#testing)
+- [Licence](#licence)
 
-<!-- /MarkdownTOC -->
+** Features **
+
+- Publish pact JSON contracts easily with a broker in JavaScript/CoffeeScript
+- Integrate publishing into your Node application
+- Register pacticipants with your brokers
+- Easily retrieve pacticipants from your brokers
+
+# Installing
+
+Run to install and save to your `package.json` file using `npm`:
+
+```bash
+$ npm install --save-dev node-pact-publisher
+```
 
 # Using Pact Publisher
 
@@ -163,11 +178,26 @@ myPublisher.isPacticipantRegistered('My Provider').then(function (isRegistered) 
 
 # Contributing
 
-1. Fork this repo
-2. Checkout a new feature or fix branch: `feature/<my-feature-name>` or `fix/<issue>`
-3. [Commit](http://chris.beams.io/posts/git-commit/) your changes
-4. Create a pull request
+Have an idea to extend this project or discover a bug? Feel free to contribute or raise an issue!
+
+To extend the code base, use the following steps:
+
+1. Fork this repo,
+2. checkout a new feature or fix branch: `feature/<my-feature-name>`, `fix/<issue>` etc.,
+3. commit your changes. A good guide to commit messages can be found [here](http://chris.beams.io/posts/git-commit/),
+4. and create a pull request.
+
+## Testing
+
+To run tests use:
+
+```bash
+$ npm test
+```
+
+Note you will need to setup a mock broker server. Follow the setup instructions found [here](https://github.com/bethesque/pact_broker#to-have-a-play-around-on-your-local-machine) to set one up.
 
 # Licence
 
 Copyright &copy; 2015 Alex Cummaudo. Licensed under the MIT license.
+
