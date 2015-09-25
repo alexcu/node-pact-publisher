@@ -13,7 +13,7 @@ Publishes [pact](https://github.com/bethesque/pact-specification) contracts to a
   - [Testing](#testing)
 - [Licence](#licence)
 
-** Features **
+**Features**
 
 - Publish pact JSON contracts easily with a broker in JavaScript/CoffeeScript
 - Integrate publishing into your Node application
