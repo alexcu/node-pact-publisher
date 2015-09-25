@@ -1,0 +1,33 @@
+{
+  "name": "node-pact-publisher",
+  "version": "1.0.0",
+  "description": "Publishes pact contracts to a remote pact broker using Node",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha -R spec ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexcu-/node-pact-publisher"
+  },
+  "keywords": [
+    "pact",
+    "broker",
+    "node",
+    "publish",
+    "contract"
+  ],
+  "author": "Alex Cummaudo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexcu-/node-pact-publisher/issues"
+  },
+  "homepage": "https://github.com/alexcu-/node-pact-publisher",
+  "dependencies": {
+    "color-log": "0.0.2",
+    "mocha": "^2.2.5",
+    "q": "^1.4.1",
+    "request": "^2.63.0",
+    "should": "^6.0.3",
+    "underscore": "^1.8.3"
+  }
+}
