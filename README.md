@@ -3,19 +3,19 @@ Publishes [pact](https://github.com/bethesque/pact-specification) contracts to a
 
 <!-- MarkdownTOC -->
 
-- [Using Pact Publisher][using]
-  - [Constructing a new publisher][constructing]
-  - [Publishing pacts to the broker][publishing]
-  - [Registering new pacticipants on the broker][registering]
-  - [Checking for pacticipants on the broker][checking]
-- [Contributing][contributing]
-- [Licence][license]
+- Using Pact Publisher
+  - Constructing a new publisher
+  - Publishing pacts to the broker
+  - Registering new pacticipants on the broker
+  - Checking for pacticipants on the broker
+- Contributing
+- Licence
 
 <!-- /MarkdownTOC -->
 
-# Using Pact Publisher [using]
+# Using Pact Publisher
 
-## Constructing a new publisher [constructing]
+## Constructing a new publisher
 
 Construct a new publisher using either a config object:
 
@@ -78,7 +78,7 @@ var myPublisherUsingConfig = new PactPublisher({
 });
 ```
 
-### Can I use an `appVersion` in my `package.json` file?
+### Can I use the `version` field in my `package.json` file for `appVersion`?
 
 Of course! If you'd like to use the version of your app from `package.json`, just load it in:
 
@@ -89,7 +89,7 @@ var myPublisher  = new PactPublisher(myAppVersion, 'http://remote.pact.broker');
 
 Pact Publisher doesn't automatically do this for you in case you're not using a node application, but would like to publish using this simple node library.
 
-## Publishing pacts to the broker [publishing]
+## Publishing pacts to the broker
 
 To publish your pacts, populate the files you want to publish in the [constructor][constructing] under the `pacts` key/argument, then simply call the `publish` method on your publisher to let the magic happen!
 
@@ -123,7 +123,7 @@ myPublisher.publish().then(function (numberOfPactsPublished) {
 });
 ```
 
-## Registering new pacticipants on the broker [registering]
+## Registering new pacticipants on the broker
 
 You can also use Pact Publisher to register your consumer or providers on brokers. This can be done using the `registerPact` method, which returns a promise to the 'pacticipant' published, or an error message.
 
@@ -137,7 +137,7 @@ myPublisher.register('My Awesome Provider').then(function (pactInfo) {
 });
 ```
 
-## Checking for pacticipants on the broker [checking]
+## Checking for pacticipants on the broker
 
 Similar to [registering][registering] pacts, you can check which pacticipants already exist in the broker, or even check if your pacticipants is registered first. Use the `getPacticipantNames` or `isPacticipantRegistered` methods to do so. Both return promises for data or errors.
 
@@ -161,13 +161,13 @@ myPublisher.isPacticipantRegistered('My Provider').then(function (isRegistered) 
 });
 ```
 
-# Contributing [contributing]
+# Contributing
 
 1. Fork this repo
 2. Checkout a new feature or fix branch: `feature/<my-feature-name>` or `fix/<issue>`
 3. [Commit](http://chris.beams.io/posts/git-commit/) your changes
 4. Create a pull request
 
-# Licence [license]
+# Licence
 
 Copyright &copy; 2015 Alex Cummaudo. Licensed under the MIT license.
