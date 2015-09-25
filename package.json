@@ -1,6 +1,6 @@
 {
   "name": "node-pact-publisher",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Publishes pact contracts to a remote pact broker using Node",
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha -R spec ./test"
@@ -9,6 +9,7 @@
     "type": "git",
     "url": "https://github.com/alexcu-/node-pact-publisher"
   },
+  "main": "lib/pact-publisher.js",
   "keywords": [
     "pact",
     "broker",
