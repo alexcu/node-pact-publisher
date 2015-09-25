@@ -66,13 +66,13 @@ describe('Publishing', function () {
   var pactPublisher = new PactPublisher({
     appVersion: version,
     brokerBaseUrl: brokerBaseUrl,
-    logging: true
+    logging: false
   });
   var pactPublisherMulti = new PactPublisher({
     appVersion: version,
     brokerBaseUrl: brokerBaseUrl,
     pacts: pactsFiles,
-    logging: true
+    logging: false
   });
   // Register the pacticipants
   before(function (done) {
