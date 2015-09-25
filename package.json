@@ -1,6 +1,6 @@
 {
   "name": "node-pact-publisher",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Publishes pact contracts to a remote pact broker using Node",
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha -R spec ./test"
