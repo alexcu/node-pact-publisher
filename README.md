@@ -106,7 +106,7 @@ Pact Publisher doesn't automatically do this for you in case you're not using a 
 
 ## Publishing pacts to the broker
 
-To publish your pacts, populate the files you want to publish in the [constructor][constructing] under the `pacts` key/argument, then simply call the `publish` method on your publisher to let the magic happen!
+To publish your pacts, populate the files you want to publish in the [constructor](#constructing-a-new-publisher) under the `pacts` key/argument, then simply call the `publish` method on your publisher to let the magic happen!
 
 ```javascript
 var myPublisher = new PactPublisher({
@@ -154,7 +154,7 @@ myPublisher.register('My Awesome Provider').then(function (pactInfo) {
 
 ## Checking for pacticipants on the broker
 
-Similar to [registering][registering] pacts, you can check which pacticipants already exist in the broker, or even check if your pacticipants is registered first. Use the `getPacticipantNames` or `isPacticipantRegistered` methods to do so. Both return promises for data or errors.
+Similar to [registering](#registering-new-pacticipants-on-the-broker) pacts, you can check which pacticipants already exist in the broker, or even check if your pacticipants is registered first. Use the `getPacticipantNames` or `isPacticipantRegistered` methods to do so. Both return promises for data or errors.
 
 ```javascript
 // Getting all pacticipants
