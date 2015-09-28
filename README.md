@@ -176,6 +176,20 @@ myPublisher.isPacticipantRegistered('My Provider').then(function (isRegistered) 
 });
 ```
 
+# Example
+
+A sample of the publisher is provided under the `example` folder.
+
+To run the example use:
+
+```bash
+$ node example --broker http://remote.pact.broker
+```
+
+where `http://remote.pact.broker` is the name of the pact broker to publish to. You can set up a mock pact broker server by following instructions [here](https://github.com/bethesque/pact_broker#to-have-a-play-around-on-your-local-machine).
+
+This example will publish all pact contracts under `exmaple/pacts`.
+
 # Contributing
 
 Have an idea to extend this project or discover a bug? Feel free to contribute or raise an issue!

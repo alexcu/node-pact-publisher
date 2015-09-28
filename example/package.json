@@ -1,0 +1,8 @@
+{
+  "name": "node-pact-publisher-example",
+  "version": "1.0.0",
+  "description": "Example for Node Pact Publisher",
+  "main": "index.js",
+  "author": "Alex Cummaudo",
+  "license": "ISC"
+}
