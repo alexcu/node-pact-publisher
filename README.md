@@ -187,7 +187,7 @@ To run the example use:
 $ node example --broker http://remote.pact.broker
 ```
 
-where `http://remote.pact.broker` is the name of the pact broker to publish to. You can set up a mock pact broker server by following instructions [here](https://github.com/bethesque/pact_broker#to-have-a-play-around-on-your-local-machine).
+where `http://remote.pact.broker` is the url of the pact broker to publish to. You can set up a mock pact broker server by following instructions [here](https://github.com/bethesque/pact_broker#to-have-a-play-around-on-your-local-machine).
 
 This example will publish all pact contracts under `exmaple/pacts`.
 
