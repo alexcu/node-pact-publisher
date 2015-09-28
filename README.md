@@ -9,6 +9,7 @@ Publishes [pact](https://github.com/bethesque/pact-specification) contracts to a
   - [Publishing pacts to the broker](#publishing-pacts-to-the-broker)
   - [Registering new pacticipants on the broker](#registering-new-pacticipants-on-the-broker)
   - [Checking for pacticipants on the broker](#checking-for-pacticipants-on-the-broker)
+- [Example](#example)
 - [Contributing](#contributing)
   - [Testing](#testing)
 - [Licence](#licence)
