@@ -140,10 +140,10 @@ myPublisher.publish().then(function (numberOfPactsPublished) {
 
 ## Registering new pacticipants on the broker
 
-You can also use Pact Publisher to register your consumer or providers on brokers. This can be done using the `registerPact` method, which returns a promise to the 'pacticipant' published, or an error message.
+You can also use Pact Publisher to register your consumer or providers on brokers. This can be done using the `registerPacticipant` method, which returns a promise to the 'pacticipant' published, or an error message.
 
 ```javascript
-myPublisher.register('My Awesome Provider').then(function (pactInfo) {
+myPublisher.registerPacticipant('My Awesome Provider').then(function (pactInfo) {
   // Successful registration
   console.info('My Awesome Provider was successfully published:', pactInfo);
 }, function (err) {
